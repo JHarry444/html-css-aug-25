@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="http://localhost:8080/something" method="post">
+        <fieldset>
+            <legend>Account Info</legend>
+            <label for="emailField">Email:</label>
+            <input type="email" name="email" id="emailField" value="j@h.com">
+            <br>
+            <label for="usernameField">Username:</label>
+            <input type="text" name="username" id="usernameField" autofocus required>
+            <br>
+            <label for="passwordField">Password:</label>
+            <input type="password" name="password" id="passwordField" placeholder="password">
+            <br>
+            <label for="rememberMeField">Remember me:</label>
+            <input type="checkbox" name="rememberMe" id="rememberMeField">
+        </fieldset>
+        <fieldset>
+            <legend>Other stuff</legend>
+            <label for="ageField">Age:</label>
+            <input type="number" name="age" id="ageField" min="18" step="1" max="100">
+            <br>
+            <label for="dobField">DOB:</label>
+            <input type="date" name="dob" id="dobField">
+            <br>
+            <label for="genderField1">Male</label>
+            <input type="radio" name="gender" value="male" id="genderField1">
+            <label for="genderField2">Female</label>
+            <input type="radio" name="gender" value="female" id="genderField2">
+            <label for="genderField3">Other</label>
+            <input type="radio" name="gender" value="other" id="genderField3">
+            <label for="genderField4">Prefer not to say</label>
+            <input type="radio" name="gender" value="preferNotToSay" id="genderField4">
+        </fieldset>
+        <fieldset>
+            <legend>Buttons</legend>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
