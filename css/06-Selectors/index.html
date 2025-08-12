@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Ex</title>
+    <style>
+        #inputs {
+            color: yellow;
+        }
+
+        .subheading {
+            color: red;
+        }
+
+        h2 {
+            color: burlywood;
+        }
+
+        h2 {
+            color: blueviolet;
+        }
+
+
+
+        /* only paragraphs inside a div */
+        /* descendant */
+        div p {
+            color: green;
+        }
+
+        /* only paragraphs DIRECTLY inside a div */
+        /* child */
+        div>p {
+            color: purple;
+        }
+
+        /* ANY sibling */
+        h2~p {
+            color: darkorange;
+        }
+
+        /* direct sibling */
+        h2+p {
+            color: plum;
+        }
+
+
+        p {
+            color: cadetblue;
+        }
+
+        input[type="text"] {
+            color: brown;
+        }
+
+        a:visited {
+            color: maroon;
+        }
+
+        a:hover {
+            color: pink;
+        }
+
+        /* li:first-child {
+            color: green;
+        }
+
+        li:last-child {
+            color: red;
+        } */
+        /* 
+        li:nth-child(2n) {
+            color: red;
+        }
+
+        li:nth-child(2n-1) {
+            color: blue;
+        } */
+
+        li:nth-child(odd) {
+            color: red;
+        }
+
+        /* li:nth-child(even) {
+            color: blue;
+        } */
+
+        li:not(:nth-child(odd)) {
+            color: blue;
+        }
+
+        p:last-of-type {
+            color: grey;;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1 style="color: magenta;"> Heading 1 </h1>
+        <h2> Headings </h2>
+        <h3 class="subheading"> Heading 3 </h3>
+        <h4> Heading 4 </h4>
+        <h5> Heading 5 </h5>
+        <h6> Heading 6 </h6>
+    </div>
+    <div>
+        <h2 class="subheading">Links</h2>
+        <a href="https://www.qa.com/"> QA </a>
+        <a href="./about.html">
+            <img src="./me.jpg" height="50px">
+        </a>
+        <a href="./about.html" target="_blank">
+            <img src="./me.jpg" height="50px">
+        </a>
+        <a href="#lists"> Lists </a>
+    </div>
+    <div>
+        <h2 class="subheading">Paragraphs</h2>
+        <p> First paragraph with <strong>bold</strong> or <em>italicised</em> text</p>
+        <h4>Random h4</h4>
+        <p> Second paragraph </p>
+        <section>
+            <p>NOT directly inside a div</p>
+        </section>
+    </div>
+    <div>
+        <h2 id="inputs" class="subheading">Inputs</h2>
+        <label for="">Username:</label>
+        <br>
+        <input type="text">
+        <br>
+        <label for="passwordInput">Password:</label>
+        <br>
+        <input id="passwordInput" type="password">
+    </div>
+    <div id="lists">
+        <h2> Lists </h2>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+        </ul>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+        </ol>
+    </div>
+    <p> First paragraph with <strong>bold</strong> or <em>italicised</em> text</p>
+    <p> First paragraph with <strong>bold</strong> or <em>italicised</em> text</p>
+    <p> First paragraph with <strong>bold</strong> or <em>italicised</em> text</p>
+</body>
+
+</html>
