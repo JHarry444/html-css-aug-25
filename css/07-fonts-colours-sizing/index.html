@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colours Fonts and Sizing</title>
+    <style>
+        .weirdText {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+            text-shadow: 3px 5px 6px black;
+            /* rgba -> red, green, blue, alpha (transparency) */
+            /* color: rgba(255, 255, 255,1); */
+            /* hexadecimal: #000000 -> #FFFFFF */
+            /* color: #a96666; */
+            /* hue (angle on the colour circle), saturation and lightness (plus alpha) */
+            color: hsla(189, 35%, 55%, 0.676);
+        }
+
+        img {
+            /* pixels are easy but depend on screen size */
+            /* width: 150px; */
+            /* em -> line height */
+            height: 1em;
+        }
+
+        p:first-of-type {
+            /* pt -> 1/72 of an inch */
+            font-size: 24pt;
+        }
+
+        div>p {
+            max-width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p>text <em>text</em> <img src="./me.jpg"> text text</p>
+    <p class="weirdText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque elit, fringilla at
+        tellus vitae, placerat
+        suscipit turpis. Proin dignissim ex vel lorem ultrices, nec hendrerit metus fermentum. Integer pretium consequat
+        massa, sed lobortis tortor vehicula vitae. Etiam vitae sagittis nulla. Nam semper nibh eu mi bibendum consequat.
+        Suspendisse porttitor imperdiet quam vitae venenatis. Sed sit amet purus vel ligula aliquam venenatis in vitae
+        risus.</p>
+    <div>
+        <p>Quisque diam diam, egestas vel justo ut, viverra lobortis erat. Mauris rutrum tincidunt neque at convallis.
+            Nulla
+            quis arcu imperdiet, tincidunt nisl non, ornare tellus. Donec accumsan bibendum ex in blandit. Donec risus
+            ex,
+            suscipit quis suscipit fermentum, porta id dui. Maecenas et facilisis purus. Aenean elementum ut eros sed
+            placerat. Aliquam iaculis tortor lectus, quis porta quam tincidunt nec. Donec fringilla diam commodo
+            venenatis
+            consequat.</p>
+    </div>
+
+</body>
+
+</html>
