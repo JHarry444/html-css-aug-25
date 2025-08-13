@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        #transitionBtn {
+            background-color: blue;
+        }
+
+        #transitionBtn:hover {
+            background-color: red;
+            transition: 2s;
+        }
+
+        #transformer:hover {
+            transform: rotate3d(1, 1, 1, 360deg);
+            transition: 2s;
+        }
+
+
+        @keyframes iLikeToMoveItMoveit {
+            25% {
+                transform: translate(100px, 0px);
+            }
+
+            50% {
+                transform: translate(100px, 100px);
+            }
+
+            75% {
+                transform: translate(0px, 100px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        
+        }
+
+        /* #keyFrameExample:hover {
+            animation: iLikeToMoveItMoveit 2s;
+            animation-iteration-count: infinite;
+        } */
+    </style>
+
+
+</head>
+
+<body>
+    <section>
+        <h2>Transition</h2>
+        <button id="transitionBtn">HOVER ME</button>
+    </section>
+    <section>
+        <h2>Transform</h2>
+        <img id="transformer" src="me.jpg" alt="Fluffy dude">
+    </section>
+    <section>
+        <h2>Keyframes</h2>
+        <img id="keyFrameExample" src="me.jpg" alt="Fluffy dude">
+    </section>
+
+    <script>
+        document.getElementById("keyFrameExample").addEventListener("mouseover", function () {
+            this.style.animation = "iLikeToMoveItMoveit 5s";
+            // this.style.animationIterationCount = "infinite";
+        });
+    </script>
+</body>
+
+</html>
