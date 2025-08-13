@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Backgrounds</title>
+
+    <style>
+        img {
+            position: absolute;
+        }
+
+        img:hover {
+            /* animation: myAnim 2s ease 0s 1 normal forwards; */
+        }
+
+        @keyframes myAnim {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                transform: scale3d(0.95, 1.05, 1);
+            }
+
+            75% {
+                transform: scale3d(1.05, 0.95, 1);
+            }
+
+            100% {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: url('me.jpg');">
+    <img src="./me.jpg" alt="Fluffster" width="50%">
+    <p>dfhfgfdhgdfjh</p>
+</body>
+
+</html>

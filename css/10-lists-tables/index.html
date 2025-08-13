@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Tables</title>
+
+    <style>
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            list-style-image: url("me.jpg");
+        }
+
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border: 1px solid black;
+            caption-side: top;
+            empty-cells: hide; 
+            /* can only hide empty cells if the borders are separate */
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        tbody tr:hover {
+            background-color: hotpink !important;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Lists</h2>
+        <ul>
+            <li>Jordan</li>
+            <li>Cameron</li>
+            <li>Andy</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Tables</h2>
+        <table>
+            <caption>Trainers</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Age
+                    </th>
+                    <th>
+                        Specialism
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Jordan
+                    </td>
+                    <td>
+                        31
+                    </td>
+                    <td>
+                        Java
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cameron
+                    </td>
+                    <td>
+                        32
+                    </td>
+                    <td>
+                        Web
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Shafeeq
+                    </td>
+                    <td>
+                        40
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>
